@@ -66,11 +66,11 @@ const questions = [
 // function to write README file
 const writeToFile = (fileName, appendData) => {
     // to create the markdown file
-    writeNewFile("README.md", appendData, err => {
+    writeNewFile("./ReadmeBOT/README.md", appendData, err => {
         if (err) { console.log(err); }
         
     });
-    console.log("Congratulations! README has been generated!");
+    console.log("Congratulations! README has been generated at ReadmeBot folder!");
 };
 
 // function to initialize program
@@ -100,7 +100,7 @@ const start = () => {
           // function call to initialize program
           initialize();
       } else {
-          connection.end();
+        //   terminates the program
           process.exit(0);
       }
   })
