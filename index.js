@@ -6,9 +6,9 @@ const util = require('util');
 // linking the generateMarkdown.js
 const generateMarkdown = require("./utils/generateMarkdown");
 // new file creation
-const writeNewFile = util.promisify(fs.writeFile);
+let writeNewFile = util.promisify(fs.writeFile);
 
-let fileName = "";
+let fileName;
 
 
 
@@ -66,10 +66,11 @@ const questions = [
 // function to write README file
 const writeToFile = (fileName, appendData) => {
     // to create the markdown file
-    fs.writeNewFile("README.md", appendData, err => {
+    writeNewFile("README.md", appendData, err => {
         if (err) { console.log(err); }
-        console.log("Congratulations! README has been generated!")
+        
     });
+    console.log("Congratulations! README has been generated!");
 };
 
 // function to initialize program
@@ -79,9 +80,9 @@ const initialize = () => {
 //   returns user input to generate the readme data
   .then(function getMD(data){
     // Placeholder for the user input
-    let appendData = getMD(data);
+    let appendData = generateMarkdown(data);
     // starts the writeToFile function
-    writeToFile(filename, appendData);
+    writeToFile(fileName, appendData);
   })
 };
 
