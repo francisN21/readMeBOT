@@ -1,7 +1,7 @@
 
 # README BOT
 
-
+![](./utils/READMEBOT.gif)
 
 ### Descritption
 
