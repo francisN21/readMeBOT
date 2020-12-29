@@ -8,8 +8,8 @@ const generateMarkdown = uOutput => {
 ${uOutput.Description}
 
 ### Installation
-required installation
 
+required installation
 ${uOutput.Installation}
 
 ### Usage
@@ -25,6 +25,7 @@ License under [${uOutput.License} License](License)
 ${uOutput.Contribution}
 
 ### Tests
+
 ${uOutput.TestInstructions}
 
 ### Questions and Suggestions
