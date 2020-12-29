@@ -100,7 +100,7 @@ const start = () => {
           // function call to initialize program
           initialize();
       } else {
-        //   terminates the program
+          // terminates the program
           process.exit(0);
       }
   })
