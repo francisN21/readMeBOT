@@ -16,6 +16,20 @@ ${uOutput.Installation}
 
 ${uOutput.Usage}
 
+### Table of Contents
+
+  [Description](###Descritption)
+
+  [Installation](###Installation)
+
+  [Usage](###Usage)
+
+  [License](###License)
+
+  [Contributing](###Contributions)
+
+  [Tests](###Tests)
+
 ### License
 
 License under [${uOutput.License} License](License)
