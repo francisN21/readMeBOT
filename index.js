@@ -1,9 +1,12 @@
 // required const for the 
 const fs = require('fs');
 const inquirer = require('inquirer');
-const { createConnection } = require('net');
+// linking the generateMarkdown.js
+const generateMarkdown = require("./utils/generateMarkdown");
 const util = require('util');
 
+
+let fileName = "";
 
 
 
@@ -59,19 +62,24 @@ const questions = [
 ];
 
 // function to write README file
-const writeToFile = (fileName, data) => {
+const writeToFile = (fileName, appendData) => {
 };
 
 // function to initialize program
 const initialize = () => {
+// questions prompt starts here
   inquirer.prompt(questions)
+//   returns user input to generate the readme data
   .then(function getMD(data){
-
+    // Placeholder for the user input
+    let appendData = getMD(data);
+    // starts the writeToFile function
+    writeToFile(filename, appendData);
   })
 };
 
 
-
+// start function
 const start = () => {
   inquirer.prompt({
     name: "StartorExit",
@@ -89,5 +97,5 @@ const start = () => {
       }
   })
 }
-
+// starts the readme bot program
 start();
