@@ -9,8 +9,16 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "inquirer": "^6.3.1"
+    "inquirer": "^6.5.2"
   },
+  "keywords": [],
   "devDependencies": {},
-  "keywords": []
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/francisN21/readMeBOT.git"
+  },
+  "bugs": {
+    "url": "https://github.com/francisN21/readMeBOT/issues"
+  },
+  "homepage": "https://github.com/francisN21/readMeBOT#readme"
 }
